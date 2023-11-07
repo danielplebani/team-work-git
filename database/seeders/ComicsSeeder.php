@@ -14,6 +14,7 @@ class ComicsSeeder extends Seeder
     public function run(): void
     {
         $comic = new Comic();
+        $comic->author = 'Jorge Lucas';
         $comic->save();
     }
 }
