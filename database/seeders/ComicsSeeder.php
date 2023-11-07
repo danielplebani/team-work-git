@@ -14,7 +14,12 @@ class ComicsSeeder extends Seeder
     public function run(): void
     {
         $comic = new Comic();
+
         $comic->price = 12;
+        $comic->name = " NOME COMICS 1";
+        $comic->description = 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum';
+        $comic->author = 'Jorge Lucas';
+
         $comic->save();
     }
 }
