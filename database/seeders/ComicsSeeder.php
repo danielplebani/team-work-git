@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Comic;
 
 class ComicsSeeder extends Seeder
 {
@@ -12,6 +13,7 @@ class ComicsSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $comic = new Comic();
+        $comic->save();
     }
 }
